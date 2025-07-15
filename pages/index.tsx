@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { Button } from "@/components/ui/button";
-import { FreeTestGate } from "@/components/FreeTestGate";
-import { WatermarkOverlay } from "@/components/WatermarkOverlay";
+import { Button } from "../components/ui/button";
+import { FreeTestGate } from "../components/FreeTestGate";
+import { WatermarkOverlay } from "../components/WatermarkOverlay";
 
 export default function Home() {
   const [rendered, setRendered] = useState(false);
@@ -42,9 +42,7 @@ export default function Home() {
 
       {rendered && (
         <div className="text-center mt-8 max-w-lg">
-          <h2 className="text-xl font-semibold mb-2">
-            Loved your test video?
-          </h2>
+          <h2 className="text-xl font-semibold mb-2">Loved your test video?</h2>
           <p className="text-muted-foreground mb-4">
             Unlock full features and render unlimited scenes. Subscribe for just $X/month.
           </p>
